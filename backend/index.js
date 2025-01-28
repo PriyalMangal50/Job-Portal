@@ -32,7 +32,7 @@ app.use(cookieParser());
 
 const corsOptions = {
     origin: [
-        'https://mern-job-portal-67oy.onrender.com', // Deployed frontend
+        'https://job-portal-cviy.vercel.app',
         'http://localhost:5173', // Vite development server
         'http://localhost:3000', // Backend server (optional for tools like Postman)
     ],
