@@ -23,8 +23,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
     origin: [
-         // Deployed frontend
-        'http://localhost:5173', // Local development (Vite)
+        'https://job-portal-gold-ten.vercel.app', // Local development (Vite)
     ],
     credentials: true,
 };
