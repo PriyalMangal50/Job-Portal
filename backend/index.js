@@ -51,10 +51,7 @@ app.use("/api/v1/application", applicationRoute);
 // Make sure the 'frontend/dist' or 'frontend/build' folder contains the built files after running `npm run build` in the frontend
 app.use(express.static(path.join(_dirname, "/frontend/dist")));
 
-app.listen(PORT,()=>{
-   
-    console.log(`Server running at port ${PORT}`);
-})
+
 // Catch-all route to serve the frontend app
 app.get('*', (req, resp) => {
   resp.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
