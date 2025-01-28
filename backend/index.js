@@ -39,7 +39,7 @@ const corsOptions = {
     credentials: true, // Allow cookies
 };
 app.use(cors(corsOptions));
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // API Routes
 app.use("/api/v1/user", userRoute);
